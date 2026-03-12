@@ -405,44 +405,47 @@ Step 8 — Final totals printed
 ## 🖥️ Sample Output
 
 ```
-[INFO ] DuckSimulator - ╔══════════════════════════════════════════╗
-[INFO ] DuckSimulator - ║        🦆  Duck Pond Simulator  🦆        ║
-[INFO ] DuckSimulator - ╚══════════════════════════════════════════╝
+╔══════════════════════════════════════════╗
+║        🦆  Duck Pond Simulator  🦆        ║
+╚══════════════════════════════════════════╝
 
-[INFO ] DuckSimulator - [Step 1] Creating ducks via CountingDuckFactory…
-[INFO ] DuckSimulator - [Step 2] Adapting a Wild Goose to Quackable…
-[INFO ] DuckSimulator - [Step 3] Wrapping ducks with ObservableQuackable…
-[INFO ] DuckSimulator - [Step 4] Assembling the Flock (Composite)…
+[Step 1] Creating ducks via CountingDuckFactory…
 
-[INFO ] DuckSimulator - [Step 5] Full pond quack ↓
-[INFO ] Flock         - -- Flock quacks (2 members) --
-[INFO ] Flock         - -- Flock quacks (3 members) --
-[INFO ] MallardDuck   - Mallard Duck: Quack!
-[INFO ] RedheadDuck   - Redhead Duck: Quack!
-[INFO ] RubberDuck    - Rubber Duck: Squeak!
-[INFO ] WildGoose     - Wild Goose: Honk! Honk!
+[Step 2] Adapting a Wild Goose to Quackable…
 
-[INFO ] DuckSimulator - [Step 6] Simulation Statistics
-[INFO ] DuckSimulator - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[INFO ] DuckSimulator -   Decorator count  (QuackCounter) : 3 quacks
-[INFO ] DuckSimulator -   Observer count   (QuackTracker) : 4 quacks
+[Step 3] Wrapping ducks with ObservableQuackable…
 
-[INFO ] DuckSimulator - [Step 7] Iterating through the duckFlock individually…
-[INFO ] DuckSimulator -   Individual quack #1 → Observable[QuackCounter[MallardDuck]]
-[INFO ] MallardDuck   - Mallard Duck: Quack!
-[INFO ] DuckSimulator -   Individual quack #2 → Observable[QuackCounter[RedheadDuck]]
-[INFO ] RedheadDuck   - Redhead Duck: Quack!
-[INFO ] DuckSimulator -   Individual quack #3 → Observable[QuackCounter[RubberDuck]]
-[INFO ] RubberDuck    - Rubber Duck: Squeak!
+[Step 4] Assembling the Flock (Composite)…
 
-[INFO ] DuckSimulator - [Step 8] Final Totals after individual iteration
-[INFO ] DuckSimulator - ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-[INFO ] DuckSimulator -   Total quacks recorded by Decorator : 6
-[INFO ] DuckSimulator -   Total quacks tracked by Observer   : 7
+[Step 5] Full pond quack ↓
+-- Flock quacks (2 members) --
+-- Flock quacks (3 members) --
+Mallard Duck: Quack!
+Redhead Duck: Quack!
+Rubber Duck: Squeak!
+Wild Goose: Honk! Honk!
 
-[INFO ] DuckSimulator - ╔══════════════════════════════════════════╗
-[INFO ] DuckSimulator - ║       Simulation Complete — 🎉           ║
-[INFO ] DuckSimulator - ╚══════════════════════════════════════════╝
+[Step 6] Simulation Statistics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Decorator count  (QuackCounter) : 3 quacks
+  Observer count   (QuackTracker) : 4 quacks
+
+[Step 7] Iterating through the duckFlock individually…
+  Individual quack #1 → Observable[QuackCounter[MallardDuck]]
+Mallard Duck: Quack!
+  Individual quack #2 → Observable[QuackCounter[RedheadDuck]]
+Redhead Duck: Quack!
+  Individual quack #3 → Observable[QuackCounter[RubberDuck]]
+Rubber Duck: Squeak!
+
+[Step 8] Final Totals after individual iteration
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Total quacks recorded by Decorator : 6
+  Total quacks tracked by Observer   : 7
+
+╔══════════════════════════════════════════╗
+║       Simulation Complete — 🎉           ║
+╚══════════════════════════════════════════╝
 ```
 
 > **Note:** The Decorator counts only ducks wrapped in `QuackCounter` (3 duck types × 2 rounds = 6).  
